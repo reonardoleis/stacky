@@ -1,4 +1,4 @@
-# A stack machine implemented in JavaScript!
+# A stack machine implementation in C++
 
 ## Usage:
 - Build with `make build` or `g++ -o stacky main.cpp`
