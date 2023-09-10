@@ -1,30 +1,3 @@
-class Tuple {
-	constructor(a, b) {
-  this.first = a;
-  this.second= b;
-  }
-}
-
-class Stack {
-   constructor() {
-		this.stack = [];
-	}
-  
-  popN(n) {
-  	let popped = [];
-    for (let i = 0; i < n; i++) {
-    	popped.push(this.stack.pop());
-    }
-    
-    return popped;
-  }
-  
-  push(item) {
-  	this.stack.push(item);
-  }
- 
-}
-
 const PUSH = 0;
 const SUB = 1;
 const JZ  = 2;
@@ -66,6 +39,29 @@ codeToText[CALL] = 'call';
 codeToText[RET] = 'ret';
 codeToText[DUP] = 'dup';
 codeToText[MUL] = 'mul';
+
+const isJump = instr => ['jmp', 'jz', 'call'].includes(instr);
+const isLabel = line => line.indexOf(':') != -1;
+
+class Stack {
+   constructor() {
+		this.stack = [];
+	}
+  
+  popN(n) {
+  	let popped = [];
+    for (let i = 0; i < n; i++) {
+    	popped.push(this.stack.pop());
+    }
+    
+    return popped;
+  }
+  
+  push(item) {
+  	this.stack.push(item);
+  }
+ 
+}
 
 class StackMachine {
 	constructor(tupleList) {
@@ -162,8 +158,7 @@ class StackMachine {
 
 }
 
-const isJump = instr => ['jmp', 'jz', 'call'].includes(instr);
-const isLabel = line => line.indexOf(':') != -1;
+
 
 function compile(asm) {
   const labels = [];
