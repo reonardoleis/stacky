@@ -1,7 +1,12 @@
 # A stack machine implemented in JavaScript!
 
 ## Usage:
-Run `node src/index.js <input_file_path>`
+- Build with `make build` or `g++ -o stacky main.cpp`
+- Run with `./stacky <assemble | run | rund> <input_file_path>`
+
+`assemble` will assemble the input file and generate a .bin file<br>
+`run` will run the input .bin file and present the output (the top of the stack)<br>
+`rund` will run the input .bin file in debug mode
 
 ## Available instructions:
 

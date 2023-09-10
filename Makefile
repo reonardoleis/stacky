@@ -1,2 +1,2 @@
 build:
-  g++ main.cpp
+	g++ -o stacky main.cpp
