@@ -13,6 +13,6 @@ Run `node src/index.js <input_file_path>`
 - `mul`: pops the 2 top elements of the stack and pushes their multipliaction into the stack
 - `jz LABEL`: jumps to LABEL if stack's top is equal to 0
 - `jmp LABEL`: unconditionally jumps to LABEL
-- `call LABEL`: call LABEL as a function, pushing the return point into the returnStack
-- `ret`: pops the top element of the returnStack and sets the PC to this value, return from a function to the saved point
+- `call LABEL`: call LABEL as a function, pushing the return point into the callStack
+- `ret`: pops the top element of the callStack and sets the PC to this value, return from a function to the saved point
 - `hlt`: ends the program

@@ -67,7 +67,7 @@ class StackMachine {
 	constructor(tupleList) {
   	this.stack = new Stack();
     this.popStack = new Stack();
-    this.returnStack = new Stack();
+    this.callStack = new Stack();
     this.program = tupleList;
     this.pc = 0;
   }
@@ -125,13 +125,13 @@ class StackMachine {
         
         case CALL:
         {
-          this.returnStack.push(this.pc);
+          this.callStack.push(this.pc);
           this.pc = this.program[this.pc][1] - 1;
         }
         break;
         case RET:
         {
-          let [ retStackTop ] = this.returnStack.popN(1);
+          let [ retStackTop ] = this.callStack.popN(1);
           this.pc = retStackTop;
         }
         break;
