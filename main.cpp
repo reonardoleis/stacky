@@ -16,7 +16,7 @@
 int main(int argc, char *argv[]) {
     if (argc < 3)
     {
-        std::cout << "Usage: " << argv[0] << " <assemble|run> <input file>" << std::endl;
+        std::cout << "Usage: " << argv[0] << " <assemble|run|rund> <input file>" << std::endl;
         return 1;
     }
 
