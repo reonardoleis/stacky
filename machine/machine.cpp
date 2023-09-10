@@ -105,6 +105,13 @@ void Machine::step()
         stack.pop();
         break;
     }
+
+    case DIV:
+    {
+        Pair pair = stack.pop2();
+        stack.push(pair.second() / pair.first());
+        break;
+    }
     }
 
     pc++;

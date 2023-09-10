@@ -32,7 +32,8 @@ public:
 
 private:
     std::string instructionMnemonics[INSTRUCTIONS_COUNT] = {
-        "push","sub","jz","jmp","hlt","pops","restore","add","call","ret","dup","mul", "nop", "pop"
+        "push","sub","jz","jmp","hlt","pops","restore",
+        "add","call","ret","dup","mul", "nop", "pop", "div"
     };
     const std::string filePath;
     Instruction jumpInstructions[JUMP_INSTRUCTIONS_COUNT];

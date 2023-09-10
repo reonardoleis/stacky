@@ -8,6 +8,7 @@
 #include "../enums/instructions.hpp"
 #include "../value/value.hpp"
 #include "../utils/string.hpp"
+#include <string.h>
 
 class Program
 {

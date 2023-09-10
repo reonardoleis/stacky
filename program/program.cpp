@@ -66,6 +66,11 @@ void Program::load(std::string filePath)
             operandValue = Value(atoi(operand.c_str()));
         }
 
+        if (strcmp(operand.c_str(), "0") == 0)
+        {
+            operandValue = Value(0);
+        }
+
         code.push_back(std::tuple<int, Value>(atoi(operation.c_str()), operandValue));
     }
 

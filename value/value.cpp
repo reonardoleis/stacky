@@ -26,8 +26,17 @@ Value Value::operator*(const Value& other) const {
     } else if (type == String || other.type == String) {
         throw std::runtime_error("* is not supported with string values");
     } else {
-        std::cout << type << " - " << other.type << std::endl;
         throw std::runtime_error("* is not supported with boolean values");
+    }
+}
+
+Value Value::operator/(const Value& other) const {
+    if ((type == Int && other.type == Int) || (type == Bool && other.type == Bool)) {
+        return Value(intValue / other.intValue);
+    } else if (type == String || other.type == String) {
+        throw std::runtime_error("/ is not supported with string values");
+    } else {
+        throw std::runtime_error("/ is not supported with boolean values");
     }
 }
 
