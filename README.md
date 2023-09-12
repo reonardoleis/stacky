@@ -22,4 +22,4 @@
 - `call LABEL`: call LABEL as a function, pushing the return point into the callStack
 - `ret`: pops the top element of the callStack and sets the PC to this value, return from a function to the saved point
 - `hlt`: ends the program
-- `pop`: pops the top element of the stadck
+- `pop`: pops the top element of the stack
