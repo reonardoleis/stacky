@@ -28,19 +28,19 @@ Run the executable with the following command:
 
 ## Available instructions
 
-`push N`: Pushes the value N onto the stack.
-`pops`: Pops the top of the stack and pushes it onto the pop stack.
-`restore`: Pops the top of the pop stack and pushes it back onto the stack.
-`add`: Pops the two top elements of the stack, adds them, and pushes the result onto the stack.
-`sub`: Pops the two top elements of the stack, subtracts them (top2 - top1), and pushes the result onto the stack.
-`mul`: Pops the two top elements of the stack, multiplies them, and pushes the result onto the stack.
-`div`: Pops the two top elements of the stack, divides them (top2 / top1), and pushes the result onto the stack.
-`jz LABEL`: Jumps to the specified LABEL if the top of the stack is equal to 0.
-`jmp LABEL`: Unconditionally jumps to the specified LABEL.
-`call LABEL`: Calls LABEL as a function, pushing the return point onto the call stack.
-`ret`: Pops the top element of the call stack and sets the program counter (PC) to this value, returning from a function to the saved point.
-`hlt`: Ends the program.
-`pop`: Pops the top element of the stack
+-`push N`: Pushes the value N onto the stack.
+-`pops`: Pops the top of the stack and pushes it onto the pop stack.
+-`restore`: Pops the top of the pop stack and pushes it back onto the stack.
+-`add`: Pops the two top elements of the stack, adds them, and pushes the result onto the stack.
+-`sub`: Pops the two top elements of the stack, subtracts them (top2 - top1), and pushes the result onto the stack.
+-`mul`: Pops the two top elements of the stack, multiplies them, and pushes the result onto the stack.
+-`div`: Pops the two top elements of the stack, divides them (top2 / top1), and pushes the result onto the stack.
+-`jz LABEL`: Jumps to the specified LABEL if the top of the stack is equal to 0.
+-`jmp LABEL`: Unconditionally jumps to the specified LABEL.
+-`call LABEL`: Calls LABEL as a function, pushing the return point onto the call stack.
+-`ret`: Pops the top element of the call stack and sets the program counter (PC) to this value, returning from a function to the saved point.
+-`hlt`: Ends the program.
+-`pop`: Pops the top element of the stack
 
 ## Example
 An example program could look like this:
