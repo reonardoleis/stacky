@@ -52,4 +52,4 @@ add
 hlt
 ```
 
-This program pushes the values 5 and 3 onto the stack, adds them, and then ends the program.
+This program pushes the values 5 and 3 onto the stack, adds them, and then ends the program. More examples can be found (here)[https://github.com/reonardoleis/stacky/tree/main/examples].
