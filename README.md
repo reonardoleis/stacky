@@ -1,5 +1,7 @@
 # Stacky: A Virtual Stack Machine in C++
 
+![Header Image](https://i.imgur.com/vFg5BbN.png)
+
 Stacky is a simple virtual stack machine implemented in C++. It provides a set of instructions for stack-based computation.
 
 ## Usage
